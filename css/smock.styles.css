@@ -3,9 +3,9 @@
 /* --------------- ADD CSS RESET TO THE FILE HERE --------------- */
 
 /* 
-    http://meyerweb.com/eric/tools/css/reset/ 
-    v2.0 | 20110126
-    License: none (public domain)
+http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -75,13 +75,33 @@ table {
     box-sizing: border-box;
     line-height: 1.35;
 }
-
 /* ----- CHECK FOR USER DARK MODE PREFERENCE ----- */
-/* --------------- BEGIN USER PREFERS DARK COLOR SCHEME QUERY --------------- */
 
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: var(--dark-gray);
+    }
+}
+/* --------------- BEGIN USER PREFERS DARK COLOR SCHEME QUERY --------------- */
 /* CHANGE THE BODY'S BACKGROUND COLOR TO THE DARK GRAY IF THE USER PREFERS DARK MODE */
+@media (prefers-color-scheme: dark) {
+    .theme-a.adaptive {
+        background-color: var(--dark-gray);
+    }
+}
 
 /* --------------- END USER PREFERS DARK COLOR SCHEME QUERY --------------- */
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: var(--dark-gray);
+    }
+}
+/* ----- CONTAINERS ----- */
+body, header, footer {
+    background-color: var(--red);
+    color: var(--white);
+    padding: 0.5em 0;
+}
 
 /* ----- HEADINGS ----- */
 h1, h2, h3, h4{
@@ -190,13 +210,14 @@ img{
     float: left;
 }
 
-
 /* ---------- SMALL SCREEN STYLES ---------- */
 /* --------------- BEGIN SMALL SCREEN SIZES --------------- */
-    /* header, footer{
+@media screen and (min-width: 576px) {
+    header, footer{
         background-color: var(--lime-green);
         color: var(--dark-gray);
     }
+}
 
     main{
         display: grid;
@@ -218,12 +239,19 @@ img{
     img{
         width: 200px;
         max-width: 200px;
-    } */
+    } 
 /* --------------- END SMALL SCREEN SIZES --------------- */
 
 
 /* ---------- MEDIUM SCREEN STYLES ---------- */
 /* --------------- BEGIN MEDIUM SCREEN SIZES --------------- */
+@media screen and (min-width: 768px) {
+    header, footer{
+        background-color: var(--blue-gray);
+        color: var(--dark-gray);
+    }
+}
+
     /* header, footer{
         background-color: var(--black);
         color: var(--white);
@@ -255,10 +283,13 @@ img{
 
 /* ---------- LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN LARGE SCREEN SIZES --------------- */
-    /* header, footer{
+@media screen and (min-width: 992px) {
+    header, footer{
         background-color: var(--lime-green);
         color: var(--dark-gray);
     }
+}
+
 
     h1, h2{
         display: inline-block;
@@ -286,24 +317,29 @@ img{
 
     #seven, #eight{
         grid-row: 3/4;
-    } */
+    } 
 /* --------------- END LARGE SCREEN SIZES --------------- */
 
 
 /* ---------- ADJUSTING RESPONSIVE IMAGE SIZE ---------- */
 /* --------------- BEGIN RESPONSIVE IMAGE ADJUST SIZES --------------- */
-    /* img{
+
+img{
         width: 300px;
         max-width: 300px;
-    } */
+    } 
+
 /* --------------- END RESPONSIVE IMAGE ADJUST SIZES --------------- */
 
 /* ---------- EXTRA LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN EXTRA LARGE SCREEN SIZES --------------- */
-    /* header, footer{
+@media screen and (min-width: 1200px) {
+    header, footer{
         background-color: var(--orange);
         padding-left: 5%;
     }
+}
+
 
     main{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -361,9 +397,9 @@ img{
 
     #eight{
         grid-column: 8/12;
-    }
+    }/*  */
 
     #three p, #four p, #five p, #six p{
         padding-top: 2em;
-    } */
+    } 
 /* --------------- END EXTRA LARGE SCREEN SIZES --------------- */
