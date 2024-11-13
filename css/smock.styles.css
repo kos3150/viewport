@@ -106,17 +106,41 @@ body, header, footer {
 /* ----- HEADINGS ----- */
 h1, h2, h3, h4{
     font-weight: bold;
+    margin: 0.5em 0;
+    padding: 0.5em 0;
+    display: inline;
+    float: left;
+    color: var(--white);
+    text-shadow: 1px 1px 1px var(--black);
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+
 }
 
 h1{
     font-size: 2em;
     margin: 0.5em 0;
     display: inline;
+    float: left;
+    color: var(--white);
+    text-shadow: 1px 1px 1px var(--black);
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+
 }
 
 h2{
     font-size: 1.75em;
     display: inline;
+    float: left;
+    color: var(--white);
+    text-shadow: 1px 1px 1px var(--black);
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+
 }
 
 /* ----- IMAGES ----- */
@@ -124,6 +148,11 @@ img{
     display: block;
     max-width: 100%;
     margin: 0.5em 0;
+    padding: 0.5em 0;
+    border: 1px solid var(--black);
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px var(--black);
+
 }
 
 /* ----- ANIMATED ICON ----- */
@@ -136,10 +165,21 @@ img{
     -webkit-animation: icon-animation 1s ease-in-out infinite;
             animation: icon-animation 1s ease-in-out infinite;
     overflow: visible;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+
 }
 
 footer .icon{
     font-size: 1em;
+    margin: 0 0.5em;
+    -webkit-animation: icon-animation 1s ease-in-out infinite;
+    animation: icon-animation 1s ease-in-out infinite;
+
 }
 
 @-webkit-keyframes icon-animation {
@@ -170,6 +210,11 @@ p, small{
     margin: 0.25em;
     padding: 0.25em;
     max-width: 75ch;
+    text-align: justify;
+    text-shadow: 1px 1px 1px var(--black);
+    text-transform: uppercase;
+    text-decoration: underline;
+
 }
 
 /* ----- MAIN/HEADER/FOOTER ----- */
@@ -177,10 +222,24 @@ main, header, footer{
     font-family: sans-serif;
     color: var(--dark-gray);
     width: 100%;
+    max-width: 1795px;
+    margin: 0 auto;
+    padding: 0.5em 0;
+    border: 1px solid var(--black);
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px var(--black);
+    
 }
 
 header, footer{
     padding: 1em;
+    background-color: var(--blue-gray);
+    color: var(--white);
+    text-shadow: 1px 1px 1px var(--black);
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    
 }
 
 main{
