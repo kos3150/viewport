@@ -36,6 +36,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+
 }
 ol, ul {
     list-style: none;
@@ -128,7 +129,6 @@ body, header, footer {
     margin: 0;
     border: 1px solid var(--black);
     border-radius: 10px;
-    box-shadow: 1px 1px 1px var(--black);
 }
 
 /* ----- HEADINGS ----- */
@@ -139,11 +139,7 @@ h1, h2, h3, h4{
     display: inline;
     float: left;
     color: var(--white);
-    text-shadow: 1px 1px 1px var(--black);
     text-align: center;
-    text-transform: uppercase;
-    text-decoration: underline;
-
 }
 
 h1{
@@ -152,11 +148,8 @@ h1{
     display: inline;
     float: left;
     color: var(--white);
-    text-shadow: 1px 1px 1px var(--black);
     text-align: center;
     text-transform: uppercase;
-    text-decoration: underline;
-
 }
 
 h2{
@@ -164,11 +157,7 @@ h2{
     display: inline;
     float: left;
     color: var(--white);
-    text-shadow: 1px 1px 1px var(--black);
     text-align: center;
-    text-transform: uppercase;
-    text-decoration: underline;
-
 }
 
 /* ----- IMAGES ----- */
@@ -179,7 +168,6 @@ img{
     padding: 0.5em 0;
     border: 1px solid var(--black);
     border-radius: 10px;
-    box-shadow: 1px 1px 1px var(--black);
 }
 
 /* ----- ANIMATED ICON ----- */
@@ -235,10 +223,7 @@ p, small{
     margin: 0.25em;
     padding: 0.25em;
     max-width: 75ch;
-    text-align: justify;
-    text-shadow: 1px 1px 1px var(--black);
-    text-transform: uppercase;
-    text-decoration: underline;
+    text-align: left;
 }
 
 /* ----- MAIN/HEADER/FOOTER ----- */
@@ -250,18 +235,14 @@ main, header, footer{
     margin: 0 auto;
     padding: 0.5em 0;
     border: 1px solid var(--black);
-    border-radius: 10px;
-    box-shadow: 1px 1px 1px var(--black);   
+    border-radius: 10px;   
 }
 
 header, footer{
     padding: 1em;
     background-color: var(--blue-gray);
     color: var(--white);
-    text-shadow: 1px 1px 1px var(--black);
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: underline;   
+    text-align: center;     
 }
 
 main{
@@ -270,7 +251,6 @@ main{
     padding: 1em;
     background-color: var(--white);
     color: var(--dark-gray);
-    text-shadow: 1px 1px 1px var(--black);
     text-align: center
 }
 
@@ -280,29 +260,20 @@ section{
     padding: 1em;
     background-color: var(--white);
     color: var(--dark-gray);
-    text-shadow: 1px 1px 1px var(--black);
     text-align: center;
-    text-transform: uppercase;
-    text-decoration: underline;
 }
 
 /* ---------- EXTRA SMALL SCREEN STYLES ---------- */
 header, footer{
     background-color: var(--pink);
     color: var(--white);
-    text-shadow: 1px 1px 1px var(--black);
     text-align: center;
-    text-transform: uppercase;
-    text-decoration: underline;
 }
 
 section{
     background-color: var(--red);
-    color: var(--light-gray);
-    text-shadow: 1px 1px 1px var(--black);
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: underline;
+    color: var(--light-gray); 
+    text-align: center;   
 }
 
 img{
@@ -316,11 +287,7 @@ img{
 @media screen and (min-width: 576px) {
     header, footer{
         background-color: var(--lime-green);
-        color: var(--dark-gray);
-        text-shadow: 1px 1px 1px var(--black);
-        text-align: center;
-        text-transform: uppercase;
-        text-decoration: underline;   
+        color: var(--dark-gray);   
     }
 }
 
@@ -358,7 +325,7 @@ img{
     }
 }
 
-    /* header, footer{
+    header, footer{
         background-color: var(--black);
         color: var(--white);
     }   
@@ -383,7 +350,7 @@ img{
     #seven{
         grid-column: 3/4;
         grid-row: 3/5;
-    } */
+    } 
 /* --------------- END MEDIUM SCREEN SIZES --------------- */
 
 
