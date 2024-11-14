@@ -634,41 +634,114 @@ img{
 
     #three, #four{
         grid-column: 9/12;
+        text-align: center;
+        text-decoration: none;
+        margin: 0;
+        padding: 1em;
+        border: 1px solid var(--black);
+        border-radius: 10px;
     }
 
     #three{
         grid-row: 1/2;
+        text-align: center;
+        text-decoration: none;
+        margin: 0;
+        padding: 1em;
+        border: 1px solid var(--black);
     }
 
     #four{
         grid-row: 2/3;
+        text-align: center;
+        text-decoration: none;
+        margin: 0;
+        padding: 1em;
+        border: 1px solid var(--black);
+        box-shadow: 0 0 10px var(--black);
+        box-sizing: border-box;
+        line-height: 1.35;
+        text-align: center;
+        text-decoration: none;
+        text-transform: none;
     }
 
     #five, #six{
         grid-column: 1/4;
+        text-align: center;
+        text-decoration: none;
+        margin: 0;
+        padding: 1em;
+        border: 1px solid var(--black);
+        border-radius: 10px;
+        box-shadow: 0 0 10px var(--black);
+        box-sizing: border-box;
+        line-height: 1.35;
     }
 
     #five{
         grid-row: 3/4;
+        text-align: center;
+        text-decoration: none;
+        margin: 0;
+        padding: 1em;
+        border: 1px solid var(--black);
     }
 
     #six{
         grid-row: 4/5;
+        text-align: center;
+        text-decoration: none;
+        margin: 0;
+        padding: 1em;
+        border: 1px solid var(--black);  
     }
 
     #seven, #eight{
         grid-row: 3/5;
+        grid-column: 4/8;
+        text-align: center;
+        text-decoration: none;
+        margin: 0;
+        padding: 1em;
+        border: 1px
+        solid var(--black);
+        border-radius: 10px;
+        box-shadow: 0 0 10px var(--black);
+        box-sizing: border-box;
+        line-height: 1.35;
     }
 
     #seven{
         grid-column: 4/8;
+        text-align: center;
+        text-decoration: none;
+        margin: 0;
+        padding: 1em;
+        border: 1px solid var(--black);
+        border-radius: 10px;
+        box-shadow: 0 0 10px var(--black);
+        box-sizing: border-box;
+        line-height: 1.35;
     }
 
     #eight{
         grid-column: 8/12;
-    }/*  */
+        text-align: center;
+        text-decoration: none;
+        margin: 0;
+        padding: 1em;
+        border: 1px solid var(--black);
+        border-radius: 10px;
+    }
 
     #three p, #four p, #five p, #six p{
         padding-top: 2em;
+        padding-bottom: 2em;
+        text-align: center;
+        text-decoration: none;
+        text-transform: none;
+        
+
     } 
 /* --------------- END EXTRA LARGE SCREEN SIZES --------------- */
